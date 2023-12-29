@@ -2,7 +2,7 @@
 
 [![ShellCheck](https://github.com/jlaunay/sway-trans/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/jlaunay/sway-trans/actions/workflows/shellcheck.yml)
 
-sway-trans is a tiny bash utility that sets alpha attribute of an Hyprland window.
+sway-trans is a tiny bash utility that sets alpha attribute of a Sway window.
 
 ## Installation
 
@@ -32,4 +32,7 @@ set $Super Mod4
 bindsym --whole-window $Super+Shift+button4 exec sway-trans plus
 bindsym --whole-window $Super+Shift+button5 exec sway-trans minus
 ```
+## See also
+
+If using Hyrland, see [hypr-trans](https://github.com/jlaunay/hypr-trans)
 
