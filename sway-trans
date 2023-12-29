@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+mycmd(){
+        swaymsg opacity "$1" 0.01 &>/dev/null
+}
+
+if mycmd "$@"; then
+        if [ "$1" == "plus" ]; then swaymsg opacity plus 0.09; else swaymsg opacity minus 0.09; fi
+else
+        if [ "$1" == "plus" ]; then swaymsg opacity set 1; else swaymsg opacity set 0; fi
+fi
